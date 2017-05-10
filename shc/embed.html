@@ -1,17 +1,60 @@
 <html>
 <body>
 <form action="http://simulation.training.straightawayhealth.com/the_hub/launch_sim/" method="post" target="embededSimulationPlayer">
-<input type="hidden" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaW1faWQiOiIxY2JiNDQxOTk5YzI0NjBhODFhZDNjZTFmZGU3OWQxMiIsIkVuZFBvaW50VVJMIjoiaHR0cDovL3NoYzItd2VidGVzdC5henVyZS5za2FwYXRlY2guaW8vYXBpL0xlYXJuZXIvU2ltdWxhdGlvbkNvbXBsZXRlRW5kUG9pbnQiLCJVc2VySUQiOiI0NjM2IiwiQ291cnNlRW5yb2xsbWVudElEIjoiMzAyMSIsIkxlc3NvbklEIjoiMTAxMyJ9.74CZpHTybyIX-QR2ZGDM6uFyfsiR9wHz1waRP10Fl6U" />
+<input type="hidden" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaW1faWQiOiIxY2JiNDQxOTk5YzI0NjBhODFhZDNjZTFmZGU3OWQxMiIsIkVuZFBvaW50VVJMIjoiaHR0cDovL3N0cmFpZ2h0YXdheS1xYS50cmFpbmluZy5zdHJhaWdodGF3YXloZWFsdGguY29tL2FwaS9MZWFybmVyL1NpbXVsYXRpb25Db21wbGV0ZUVuZFBvaW50IiwiVXNlcklEIjoiMzY4OSIsIkNvdXJzZUVucm9sbG1lbnRJRCI6Ijk2NTIiLCJMZXNzb25JRCI6IjM2OSJ9.IoEZBe-ESdbxxo-g85qqQWf2Oz-0QxISYCf9dZZOglA" />
 <input type="submit" value="Click me - Launch Catheter" />
 </form>
 <br />
 <br />
-<form action="http://shc2-webtest.azure.skapatech.io/api/learner/SimulationCompleteEndPoint" method="POST" target="embededSimulationPlayer">
+<!--
+    <form action="http://shc2-webtest.azure.skapatech.io/api/learner/SimulationCompleteEndPoint" method="POST" target="embededSimulationPlayer">
 <input type="hidden" name="Token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaW1faWQiOiIxY2JiNDQxOTk5YzI0NjBhODFhZDNjZTFmZGU3OWQxMiIsIkVuZFBvaW50VVJMIjoiaHR0cDovL3NoYzItd2VidGVzdC5henVyZS5za2FwYXRlY2guaW8vYXBpL0xlYXJuZXIvU2ltdWxhdGlvbkNvbXBsZXRlRW5kUG9pbnQiLCJVc2VySUQiOiI0NjM2IiwiQ291cnNlRW5yb2xsbWVudElEIjoiMzAyMSIsIkxlc3NvbklEIjoiMTAxMyJ9.74CZpHTybyIX-QR2ZGDM6uFyfsiR9wHz1waRP10Fl6U" />
+<input type="submit" value="Click me - I'm done with this Sim! OLD" />
+</form>
+-->
+
+
+<form action="http://straightaway-qa.training.straightawayhealth.com/api/learner/SimulationCompleteEndPoint" method="POST" target="embededSimulationPlayer">
+<input type="hidden" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJMZXNzb25JRCI6IjM2OSIsIkhhc1Bhc3NlZCI6dHJ1ZSwiVXNlcklEIjoiMzY3NiIsIlNjb3JlIjowLCJDb3Vyc2VFbnJvbGxtZW50SUQiOiI3ODkyIiwiVmVyYiI6IkNvbXBsZXRlZCJ9.YIeCybY8heELd2S_mkjv2kYEFryH4mKXb3j-rULP_NQ" />
 <input type="submit" value="Click me - I'm done with this Sim!" />
 </form>
+<br />
+<br />
 
-<iframe name="embededSimulationPlayer" width="80%" height="80%" />
+<!-- 
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJMZXNzb25JRCI6IjM2OSIsIkhhc1Bhc3NlZCI6dHJ1ZSwiVXNlcklEIjoiMzY5OCIsIlNjb3JlIjowLCJDb3Vyc2VFbnJvbGxtZW50SUQiOiI5NjUyIiwiVmVyYiI6IkNvbXBsZXRlZCJ9.I1mCJnpOLJMTrLyGYDERWy0kxp7dLfZnVHz7pyEFBjk
+{
+  "LessonID": "369",
+  "HasPassed": true,
+  "UserID": "3698",
+  "Score": 0,
+  "CourseEnrollmentID": "9652",
+  "Verb": "Completed"
+}
+
+-->
+
+<form action="http://straightaway-qa.training.straightawayhealth.com/api/learner/SimulationCompleteEndPoint" method="POST" target="embededSimulationPlayer">
+<input type="hidden" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJMZXNzb25JRCI6IjM2OSIsIkhhc1Bhc3NlZCI6dHJ1ZSwiVXNlcklEIjoiMzY3NiIsIlNjb3JlIjowLCJDb3Vyc2VFbnJvbGxtZW50SUQiOiI3ODkyIiwiVmVyYiI6IlN0YXJ0ZWQifQ.lBwZ0sjVZQv80frY6lhOmv9uIKkqL_QkwZSwmK3uIzE" />
+<input type="submit" value="Click me - I'm just logging an activity!" />
+</form>
+
+<!-- 
+    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJMZXNzb25JRCI6IjM2OSIsIkhhc1Bhc3NlZCI6dHJ1ZSwiVXNlcklEIjoiMzY5OCIsIlNjb3JlIjowLCJDb3Vyc2VFbnJvbGxtZW50SUQiOiI5NjUyIiwiVmVyYiI6IlN0YXJ0ZWQifQ.d83bD8t4v5hO6G9cTvkoO4ydZ7XlSD9xpNCS7995SjY
+{
+  "LessonID": "369",
+  "HasPassed": true,
+  "UserID": "3698",
+  "Score": 0,
+  "CourseEnrollmentID": "9652",
+  "Verb": "Started"
+}
+
+-->
+
+
+<div style="height: 60px;">header</div>
+<iframe name="embededSimulationPlayer" width="100%" height="100%" />
 
 </body>
 </html>
